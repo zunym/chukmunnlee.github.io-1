@@ -1,4 +1,5 @@
 //Get inputs
+var maxItems = 3;
 var fruits = [];
 var item = "";
 
@@ -6,13 +7,13 @@ var item = "";
 //cond 2 item == 'done'
 
 //cond 1 and cond 2
-while ((fruits.length < 5) && (item != 'done')) {
+while ((fruits.length < maxItems) && (item != 'done')) {
 
 //while (item != "done") {
     item = prompt('Add an item')
-    //if ((item != null) && (item != "")) {
+    if ((item != null) && (item != "")) {
         fruits.push(item);
-    //} //if
+    } //if
 } //while
 fruits.pop();
 console.log('> fruits: ', fruits);
