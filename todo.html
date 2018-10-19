@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>My TODO List</title>
+
+        <link rel="manifest" href="manifest.json">
+
+        <!-- for iOS -->
+        <link rel="apple-touch-icon" href="images/icons/icon-96x96.png">
+
         <link rel="stylesheet" 
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
             integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
@@ -13,7 +19,6 @@
             href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
             integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" 
             crossorigin="anonymous">
-
         <link rel="stylesheet" href="todo.css">
     </head>
     <body>
@@ -29,13 +34,13 @@
 
                 <div class="form-group">
                     <label for="task">Task</label>
-                    <input type="text" id="task" class="form-control" placeholder="Task name">
+                    <input type="text" id="task" value="" class="form-control" placeholder="Task name">
                     <small class="form-text text-muted">Please enter your task name</small>
                 </div>
 
                 <div class="form-group">
                     <label for="due-date">Due</label>
-                    <input type="date" id="due-date" class="form-control" placeholder="Due date">
+                    <input type="date" id="due-date" value="" class="form-control" placeholder="Due date">
                     <small class="form-text text-muted">When is this task due?</small>
                 </div>
 
@@ -43,11 +48,10 @@
                     <label for="priority">Priority</label>
 
                     <select id="priority" class="form-control">
-                        <option value="high">High</option>
-                        <option value="medium">Medium</option>
                         <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
                     </select>
-
                     <small class="form-text text-muted">Can I procrestinate?</small>
                 </div>
 
@@ -64,8 +68,8 @@
 
             </form>
 
-            <div class="list-group" id="todo-list">
-            </div>
+            <ul class="list-group" id="todo-list">
+            </ul>
 
         </div>
         

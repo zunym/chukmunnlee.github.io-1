@@ -1,11 +1,11 @@
 .priority-high {
-    border-left: 5px solid red;
+    border-left: 5px red solid;
 }
 .priority-medium {
-    border-left: 5px solid blue;
+    border-left: 5px orange solid;
 }
 .priority-low {
-    border-left: 5px solid ghostwhite;
+    border-left: 5px green solid;
 }
 
 .container {
